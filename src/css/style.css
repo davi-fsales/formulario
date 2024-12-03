@@ -1,0 +1,137 @@
+body{
+    background: url('../assets/image/bg-repeat.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .informacoes{
+    width: 300px;
+    height: 111;
+    padding: 100px;
+    color: white;
+}
+
+.container .informacoes h1{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23.44px;
+}
+
+.container .informacoes p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.container .formulario{
+    background-color: white;
+    width: 340px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container .formulario .campo {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.container .formulario .campo input{
+    width: 100%;
+    height: 35.11px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.container .formulario .campo .mensagem {
+    width: 100%;
+    height: 100px;
+    border-radius: 5PX;
+    position: relative;
+    overflow: auto;
+}
+
+.container .formulario .campo .mensagem::placeholder{
+    position: absolute;
+    left: 3px;
+    top: 5px;
+}
+
+.container .formulario .campo .mensagem-de-campo-obrigatorio {
+    position: absolute;
+    top: 38px;
+    left: 5px;
+    color: red;
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0;
+}
+
+.container .formulario .campo .mensagem-de-campo-obrigatorio.mensagem-de-campo-obrigatorio-input-mensagem{
+    margin-top: 65px;
+}
+
+.container .formulario .aviso-campos-obrigatorios{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    align-self: flex-start;
+}
+
+.container .formulario .btn-enviar{
+    background-color: #3BCC87;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    width: 298.01px;
+    height: 41.13px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.container .formulario .btn-enviar:hover{
+    opacity: 0.8;
+}
+
+/*Após o envio*/
+
+.container .formulario .campo .borda-vermelha{
+    border: 1px solid red;
+}
+
+.container .formulario .campo .borda-verde{
+    border: 1px solid rgb(33, 212, 33);
+}
+
+.container .formulario .campo .mensagem-de-campo-obrigatorio.mostrar{
+    opacity: 1; 
+}
+
+
+
+
+
+
+
+
